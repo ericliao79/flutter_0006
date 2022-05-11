@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:get/get.dart';
+
 import 'package:flutter_0006/home/view.dart';
 import 'package:flutter_0006/other/view.dart';
-import 'package:get/get.dart';
+import 'package:flutter_0006/third/view.dart';
+import 'package:flutter_0006/third/bind.dart';
 
 void main() {
   // 確保 flutter 完成載入
@@ -21,6 +24,7 @@ void main() {
           getPages: [
             GetPage(name: '/', page: () => HomePage()),
             GetPage(name: '/other', page: () => OtherPage()),
+            GetPage(name: '/third', page: () => ThirdPage(), binding: ThirdBind()),
           ],
       )
   );

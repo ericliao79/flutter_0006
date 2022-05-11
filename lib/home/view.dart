@@ -22,12 +22,21 @@ class HomePage extends StatelessWidget {
             ElevatedButton(
                 child: const Text('Go to Other'),
                 onPressed: () {
-                  var arguments =  {
+                  var arguments = {
                     'title': 'The title is from arguments',
                     'message': 'The message is from arguments',
                   };
                   Get.toNamed('/other', arguments: arguments);
-                })
+                }),
+            ElevatedButton(
+                child: const Text('Go to Third'),
+                onPressed: () {
+                  var arguments = {
+                    'title': 'The title is from arguments',
+                    'message': 'The message is from arguments',
+                  };
+                  Get.toNamed('/third', arguments: arguments);
+                }),
           ],
         ),
       ),

@@ -6,4 +6,4 @@ flutter 100 day
 
 GetX Route 學習
 
-使用 route name
+使用 route name, GetView 等 資料綁定方法
