@@ -3,6 +3,7 @@ import 'package:get/get.dart';
 
 import 'logic.dart';
 
+// 使用 GetView 代替 statelessWidget, 只適用只有一個 Controller 的情況
 class ThirdPage extends GetView<ThirdLogic> {
   ThirdPage({Key? key}) : super(key: key);
 
